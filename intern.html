@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --text: #334155;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--light);
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--primary);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #1d4ed8);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: white;
+      color: var(--primary);
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    nav {
+      background: white;
+      padding: 15px 20px;
+      box-shadow: 0 2px 10px rgba(18, 15, 15, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 12px;
+      font-weight: bold;
+      color: var(--dark);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 25px;
+      background: rgb(243, 238, 238);
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      height: 320px;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills li {
+      background: #dbeafe;
+      color: #1e3a8a;
+      padding: 10px 15px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--light);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .project-card .content {
+      padding: 15px;
+    }
+
+    .resume a,
+    .contact a {
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--dark);
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="home">
+    <h1>Hi, I'm Vadla Vaishnavi</h1>
+    <p>Web Developer | Designer | Problem Solver</p>
+    <a href="#contact" class="btn">Let's Connect</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about" class="about">
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I’m a passionate web developer with experience in building responsive and user‑friendly websites. I love transforming ideas into visually appealing digital experiences using HTML, CSS, and JavaScript.
+My web development journey began with a curiosity to understand how websites work — and soon turned into a deep interest in creating clean, efficient, and creative designs that bring concepts to life.
+        </p>
+      </div>
+      <img src="sumaaaa.jpeg" alt="Your Photo" />
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Basics</li>
+        <li>C++</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="canva-black-white-minimalist-portfolio-cover-page-a4-macn8w0Gzr4.webp" alt="Project 1" />
+          <div class="content">
+            <h3>Personal Portfolio</h3>
+            <p>Designed a modern portfolio website with a clean layout and smooth navigation.</p>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Download my resume in PDF format:</p>
+      <a href="your-resume.pdf" download>Download Resume PDF</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> vadlavaishnavi718@email.com</p>
+      <p><strong>Phone:</strong> +91 85008 22607</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vadla-vaishnavi-82448a375">linkedin.com/in/vadla-vaishnavi-82448a3750</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Vadla Vaishnavi. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
